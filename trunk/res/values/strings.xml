@@ -20,14 +20,17 @@
     <string name="Package_Name_default"></string>
     <string name="Package_Name_hint">Java package, e.g. com.example.application</string>
     <string name="Campaign_Source">Campaign Source: *</string>
+    <string name="Campaign_Source_default">google</string>
     <string name="Campaign_Source_hint">original referrer, e.g. google, citysearch, newsletter4</string>
     <string name="Campaign_Medium">Campaign Medium: *</string>
+    <string name="Campaign_Medium_default">cpc</string>
     <string name="Campaign_Medium_hint">marketing medium, e.g. cpc, banner, email</string>
     <string name="Campaign_Term">Campaign Term:</string>
     <string name="Campaign_Term_hint">paid keywords, e.g. running+shoes</string>
     <string name="Campaign_Content">Campaign Content:</string>
     <string name="Campaign_Content_hint">ad-specific content used to differentiate ads</string>
     <string name="Campaign_Name">Campaign Name: *</string>
+    <string name="Campaign_Name_default">test</string>
     <string name="Campaign_Name_hint">product, promotion code, or slogan</string>
     <string name="Generate_URL">Generate URL</string>
     <string name="clear">Clear</string>
