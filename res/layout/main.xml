@@ -60,7 +60,7 @@
 			android:text="@string/clear" />
 
 	</LinearLayout>
-	<EditText android:id="@+id/editText7" android:layout_width="fill_parent"
+	<EditText android:id="@+id/url" android:layout_width="fill_parent"
 		android:layout_height="wrap_content" android:inputType="textMultiLine" />
 
 </LinearLayout>
