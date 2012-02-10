@@ -38,6 +38,7 @@ public class MainActivity extends Activity {
 	EditText mCampaign_Term = null;
 	EditText mCampaign_Content = null;
 	EditText mCampaign_Name = null; // *
+	EditText mUrl = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,10 @@ public class MainActivity extends Activity {
 		mCampaign_Name = (EditText) findViewById(R.id.Campaign_Name);
 
 		mGenerate = (Button) findViewById(R.id.generate);
+		mClear = (Button) findViewById(R.id.clear);
+		
+		mUrl = (EditText) findViewById(R.id.url);
+		
 		mGenerate.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -105,13 +110,13 @@ public class MainActivity extends Activity {
 
 					builder.appendQueryParameter("referrer", content);
 					uri = builder.build();
+					mUrl.setText(uri.toString());
 					intent.setData(uri);
 					startActivity(intent);
 				}
 			}
 		});
 
-		mClear = (Button) findViewById(R.id.clear);
 		mClear.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -122,6 +127,7 @@ public class MainActivity extends Activity {
 				mCampaign_Term.setText("");
 				mCampaign_Content.setText("");
 				mCampaign_Name.setText("");
+				mUrl.setText("");
 			}
 		});
 	}
